@@ -201,7 +201,7 @@ section {
 }
 
 .Courses {
-  background: var(--color-background-black);
+  background: var(--color-background-navy);
   padding: 80px 0;
   gap: 30px;
   align-self: stretch;

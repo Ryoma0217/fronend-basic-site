@@ -335,6 +335,7 @@ section {
   }
   .course-body {
     font-size: 12px;
+    gap: 0;
   }
   .courses-button {
     height: 40px;

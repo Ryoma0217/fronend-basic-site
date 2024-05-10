@@ -229,9 +229,6 @@ section {
 .course-card:hover {
   box-shadow: 12px 12px 2px var(--color-accent-red);
 }
-.course-card:hover.course-body {
-  background: var(--color-course-hover-yellow);
-}
 
 .course-img {
   display: flex;
@@ -271,6 +268,11 @@ section {
   flex-direction: column;
   transition-duration: 0.3s;
 }
+
+.course-body:hover {
+  background: var(--color-course-hover-yellow);
+}
+
 .course-content {
   color: var(--black, #020911);
   margin: 0;

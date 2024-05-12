@@ -94,7 +94,7 @@
             </div>
           </a>
         </div>
-        <a class="courses-button" href="#">
+        <a class="button courses-button" href="#">
           <div class="button-label">すべてのコースを見る</div>
           <div class="button-icon">
             <img class="button-icon-img" src="./img/arrow-right.svg"  alt="more">
@@ -102,5 +102,60 @@
         </a>
       </div>
     </section>
+    <section class="Signup">
+      <div class="container signup-container">
+        <h2 class="heading signup-heading">Let’s Try!</h2> 
+        <p class="signup-text">Grand Playersでは、ご利用登録いただけた方に対し、３レッスン分の無料枠をプレゼントいたします！
+          <br>今すぐレッスンを始めて、”Grand”なプレイヤーを目指しましょう！
+          <br>お申し込みは下記フォームからどうぞ！</p>
+        <form class="signup-form">
+          <div class="signup-input-wrapper">
+            <label class="signup-label" for="username">お名前</label>
+            <input 
+                  class="signup-input" 
+                  type="text"
+                  id="username"
+                  name="username"
+                  placeholder="エドワード ヴァン 太郎">
+          </div>
+          <div class="signup-input-wrapper">
+            <label class="signup-label" for="email">メールアドレス</label>
+            <input 
+                  class="signup-input"
+                  type="email" 
+                  name="email" 
+                  id="email"
+                  placeholder="grand.players@example.com">
+          </div>      
+          <div class="signup-input-wrapper">        
+            <label class="signup-label" for="guita-experience">ギター歴 (年)</label>
+            <input 
+                  class="signup-input" 
+                  type="number"
+                  name="guita-experience" 
+                  id="ギター歴 (年)"
+                  placeholder="3"
+                  min="0">
+          </div>           
+          <div class="signup-input-wrapper">
+            <label class="signup-label" for="ambition">意気込みをどうぞ！</label>
+            <textarea 
+                  class="signup-textarea" 
+                  name="ambition" 
+                  id="ambition"
+                  placeholder="イカすギターソロをかましてモテた～い！"
+                  rows="5"></textarea>                
+          </div>           
+          <a class="button signup-button" href="#" >
+            <div class="button-label">送信する</div>
+            <div class="button-icon">
+                <img class="button-icon-img" src="./img/arrow-right.svg"  alt="more">
+            </div>
+          </a>
+
+        </form>
+      </div>
+    </section>
+
   </body>
 </html>

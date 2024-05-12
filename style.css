@@ -2,7 +2,7 @@
   --font-family-heading: "Anton", sans-selif;
   --font-family-body: "Noto Sans JP", sans-selif;
   --color-white: #fffefc;
-  --color-block: #020911;
+  --color-black: #020911;
   --color-accent-yellow: #f2e52e;
   --color-accent-red: #f20574;
   --color-background-black: #171525;
@@ -67,6 +67,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 80px 0;
 }
 
 /*全containerクラスへの指定*/
@@ -149,7 +150,6 @@ section {
 .About {
   background: var(--background-black, #171525);
   display: flex;
-  padding: 80px 0;
   flex-direction: column;
   align-items: center;
   gap: 20px;
@@ -202,7 +202,6 @@ section {
 
 .Courses {
   background: var(--color-background-navy);
-  padding: 80px 0;
   gap: 30px;
   align-self: stretch;
 }
@@ -283,18 +282,20 @@ section {
   align-self: flex-end;
 }
 
-.courses-button {
+.button {
   display: flex;
   height: 60px;
   padding: 10px 40px;
   align-items: center;
   gap: 10px;
-  background: var(--accent-red, #f20574);
-  box-shadow: 4px 4px 0 #f2e52e;
+  background: var(--color-accent-red);
   cursor: pointer;
   text-decoration: none;
   align-self: stretch;
   transition: 0.3s;
+}
+.courses-button {
+  box-shadow: 4px 4px 0 var(--color-accent-yellow);
 }
 .courses-button:hover {
   box-shadow: 12px 12px 2px var(--color-accent-yellow);
@@ -339,7 +340,7 @@ section {
     font-size: 12px;
     gap: 0;
   }
-  .courses-button {
+  .button {
     height: 40px;
     padding: 0 20px;
   }
@@ -349,5 +350,90 @@ section {
   .button-icon {
     height: 30px;
     width: 30px;
+  }
+}
+
+.Signup {
+  background: var(--color-accent-yellow);
+}
+.signup-container {
+  gap: 40px;
+}
+.signup-heading {
+  color: var(--color-black);
+}
+.signup-text {
+  color: var(--color-black);
+}
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+.signup-input-wrapper {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 20px;
+  width: 100%;
+}
+.signup-label {
+  display: flex;
+  width: 250px;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 20px;
+}
+.signup-input,
+.signup-textarea {
+  background-color: var(--color-form-background-yellow);
+  border: 1px solid var(--color-form-border-red);
+  color: var(--color-black);
+  align-items: center;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 8px;
+  resize: vertical;
+  flex: 1;
+}
+.signup-button {
+  box-shadow: 4px 4px 0 var(--color-black);
+}
+.signup-button:hover {
+  box-shadow: 12px 12px 2px var(--color-black);
+}
+
+@media (max-width: 750px) {
+  .Signup {
+    padding: 40px 0;
+  }
+  .signup-container {
+    padding: 0 20px;
+  }
+  .signup-heading {
+    font-size: 24px;
+  }
+
+  .signup-form {
+    gap: 10px;
+    align-self: stretch;
+  }
+
+  .signup-input-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .signup-label {
+    font-size: 16px;
+  }
+  .signup-input,
+  .signup-textarea {
+    font-size: 12px;
+    padding: 8px;
+    align-items: flex-start;
+    align-self: stretch;
   }
 }

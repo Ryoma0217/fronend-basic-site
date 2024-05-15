@@ -400,6 +400,7 @@ section {
 }
 .signup-button {
   box-shadow: 4px 4px 0 var(--color-black);
+  margin-top: 20px;
 }
 .signup-button:hover {
   box-shadow: 12px 12px 2px var(--color-black);

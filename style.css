@@ -364,6 +364,7 @@ section {
 }
 .signup-text {
   color: var(--color-black);
+  margin: 0;
 }
 .signup-form {
   display: flex;
